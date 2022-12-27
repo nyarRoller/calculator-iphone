@@ -1,0 +1,109 @@
+.calc{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.phone_box{
+  aspect-ratio: 9/19.5;
+  padding: 0.5% 0.5%;
+  border-radius: 10px;
+  /* border: 2px black solid;  */
+  /* position: absolute; */
+  /* height: auto; */
+  width: 20%;
+  /* z-index: 1; */
+
+}
+.phone-img{
+  background: url("iphone.jpg");
+  position: absolute;
+  right: 25.5%;
+  background-size: 100% 100%;
+  width: 50%;
+  height: 110vh;
+  /* position: absolute; */
+  /* left: 50%; */
+  /* width: 100%; */
+  /* z-index: 1; */
+}
+.inner{
+  position: relative;
+  width: 100%;
+  height: 95%;
+  border-radius: 15px;
+  /* background: black; */
+  padding: 1%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.board{
+  width: 100%;
+  
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.btn{
+  background: #313131;
+  font-size: 30px;
+  color: white;
+  width: 80%;
+  border-radius: 50%;
+  margin-bottom: 15%;
+  aspect-ratio: 1/1;
+  transition: 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.btn:hover{
+  background: #4f4f4f;
+}
+.x2{
+  /* box-sizing:initial; */
+  border-radius: 40px;
+  width: 70%;
+  aspect-ratio: auto;
+  grid-area: 5 / 1 / 5 / 3;
+  height: 85%;
+  justify-content:left;
+  padding-left: 15%;
+}
+.orng{
+  background: #F69906;
+}
+
+.result{
+  font-size: 40px;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 3%;
+  color: white;
+  width: 100%;
+  height: 50%;
+}
+.grey{
+  background: #9F9F9F;
+  color: black;
+}
+.grey:hover{
+  background: #c3c1c1;
+
+}
+.orng:hover{
+  background: white;
+  color: #F69906;
+}
+.active{
+  background: white;
+  color: #F69906;
+}
